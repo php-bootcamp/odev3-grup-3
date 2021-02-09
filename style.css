@@ -1,0 +1,260 @@
+html, .login-page {
+	height: 100%;
+}
+/** LOGİN **/
+.login-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login {
+	max-width: 796px;
+	width: 100%;
+	height: 345px;
+	/* Primary Background */
+	background: #E0EAFF;
+	/* Primary */
+	border: 2px dashed #074EE8;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 30px 40px;
+}
+.login-form {
+	width: 100%;
+	padding: 20px 0;
+}
+.login-alert {
+	/* Auto Layout */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px;
+	width: 100%;
+	height: 54px;
+	/* Surface */
+	background: #FFFFFF;
+	/* Accent */
+	border: 3px solid #BC31EA;
+	box-sizing: border-box;
+	border-radius: 6px;
+	/* Inside Auto Layout */
+	flex-grow: 1;
+	font-size: 16px;
+	line-height: 18px;
+	/* identical to box height, or 137% */
+	/* Accent */
+	color: #BC31EA;
+}
+.form-group {
+	width: 100%;
+}
+.login-form .form-group label {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #767676;
+}
+.login-input {
+	/* Input */
+	width: 100%;
+	height: 48px;
+	/* Surface */
+	background: #FFFFFF;
+	/* Border / Subtle */
+	border: 2px solid #AAAAAA;
+	box-sizing: border-box;
+	border-radius: 4px;
+	color: #111111;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 8px;
+	outline: 0;
+}
+.login-submit {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 16px;
+	width: 98px;
+	height: 40px;
+	/* Surface */
+	background: #FFFFFF;
+	/* Primary */
+	border: 2px solid #074EE8;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	/* Primary */
+	color: #074EE8;
+	outline: 0;
+	cursor: pointer;
+}
+/** LOGİN **/
+
+/** GENEL **/
+button, input[type='submit'] {
+	cursor: pointer;
+}
+form {
+	margin-bottom: 0;
+}
+.yazilar-sayfa {
+	padding: 20px 7.5%;
+}
+.menu{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+/** GENEL **/
+
+/** YAZILAR **/
+.yazilar-sayfa .bsslik {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	/* identical to box height, or 133% */
+	/* Text / Normal */
+	color: #111111;
+}
+.yazilar-sayfa .okunanlar {
+	height: 39px;
+	/* Surface */
+	background: #FFFFFF;
+	border: 2px solid #7D039B;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	/* identical to box height, or 112% */
+	display: flex;
+	align-items: center;
+	color: #7D039B;
+	padding: 4px 16px;
+	outline: 0;
+	text-decoration: none;
+}
+.yazilar-sayfa .okunanlar:hover {
+	background-color: #7D039B;
+	color: #FFF;
+	transition: 300ms ease;
+}
+.yazilar-sayfa .yazi {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .yazilar-sayfa .yazi {
+    display: inline-block !important;
+		margin-bottom: 20px !important;
+  }
+	.yazilar-sayfa .yazi .icerik {
+		padding: 5px 0px !important;
+	}
+}
+.yazilar-sayfa .yazi .resim {
+	/* Background */
+	background: #EEEEEE;
+	/* Border / Subtle */
+	border: 2px solid #AAAAAA;
+	box-sizing: border-box;
+	width: 125px;
+	height: 125px;
+	object-fit: cover;
+}
+.yazilar-sayfa .yazi .icerik {
+	padding: 5px 15px;
+	width: 100%;
+}
+.yazilar-sayfa .yazi .icerik h3 {
+	margin: 5px 0;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	/* or 133% */
+	color: #000000;
+}
+.yazilar-sayfa .yazi .icerik p, .uzun-icerik p {
+	/* Components / Paragraph */
+	margin: 5px 0;
+	font-family: Redacted Script;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	/* or 125% */
+	/* Text / Normal */
+	color: #111111;
+}
+
+.yazilar-sayfa .yazi .icerik .detay, .yazilar-sayfa .yazi .icerik .kaldir  {
+	width: 72px;
+	height: 30px;
+	/* Surface */
+	background: #FFFFFF;
+	/* Primary */
+	border: 2px solid #074EE8;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	/* identical to box height, or 112% */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Primary */
+	color: #074EE8;
+	outline: 0;
+	text-decoration: none;
+	padding: 2px 8px;
+	margin: auto 5px;
+}
+.yazilar-sayfa .yazi .icerik .kaldir {
+	background: #FFFFFF;
+	border: 2px solid #7D039B;
+	color: #7D039B;
+}
+.yazilar-sayfa .yazi .icerik .islem {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 20px;
+}
+.uzun-icerik p {
+	font-family: 'Redacted Script';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+}
