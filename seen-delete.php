@@ -1,15 +1,20 @@
 <?php
+require __DIR__ . '/functions.php';
 
-/**
- * Bu dosya örnek amaçlı olarak oluşturulmuştur. Grupla beraber karar verip
- * dosya isimlerini değiştirebilir veya buradaki işlemleri farklı dosyalara
- * bölebilirsiniz.
- */
+if ( isset($_POST['yazi_key']) ) {
 
- /**
-  * **Giriş yapmış kullanıcının** uygulama içerisinde okuduğunu belirten durumu
-  * geri alabildiği (sildiği) sayfadır. `seen.php` veya `post.php`
-  * (ikisinden biri veya her ikisi) sayfalarından buraya yönlendirebilirsiniz.
-  * Eğer bu sayfaya birden fazla yerden gelebiliyorsa **geldiği sayfaya** yönlenmesini
-  * bekliyoruz.
-  */
+	$yazi_key = $_POST['yazi_key'];
+
+	delete_cookie('key' . $yazi_key);
+
+}
+
+
+if ( isset($_POST['location']) ) {
+	header("location: " . $_POST['location']);
+} else {
+	header("location: " . $_SERVER['HTTP_REFERER']);
+}
+
+
+    ?>
